@@ -13,7 +13,7 @@ socket.onmessage = function (message) {
   const targetInput = document.querySelector(`input[data-row="${row}"][data-column="${column}"]`);
 
   if (targetInput) {
-    targetInput.setAttribute('value', value);
+    targetInput.value = value;
   }
 };
 
